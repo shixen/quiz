@@ -8,9 +8,9 @@ let quizData = [
         c: 'Blue whale',
         d: 'Shark',
         correct: 'c'
-        
+
     }, {
-        question:'What aniaml causes the most deaths today?',
+        question: 'What aniaml causes the most deaths today?',
         a: 'Crocodiles',
         b: 'Sharks',
         c: 'Mosquitoes',
@@ -24,21 +24,28 @@ let quizData = [
         d: '130 km/h',
         correct: 'd'
 
-    },{
-        question: 'What animal is the most protected today?',
+    }, {
+        question: 'What animal is the most endangered today?',
         a: 'Amur leopard',
         b: 'Tiger',
         c: 'Rhino',
         d: 'Gorilla',
         correct: 'a'
-    },{
+    }, {
         question: 'What animal live the longest ?',
-         a: 'Turtles',
-         b: 'Parrots',
-         c: 'Quahog clam',
-         d: 'Lobsters',
-         correct: 'c'
-}
+        a: 'Turtles',
+        b: 'Parrots',
+        c: 'Quahog clam',
+        d: 'Lobsters',
+        correct: 'c'
+    }, {
+        question: 'wich is the largest bird ?',
+        a: 'Sea eagle',
+        b: 'ostrich',
+        c: 'condor',
+        d: 'Emu',
+        correct: 'b',
+    }
 ]
 // variables to get from DOM
 let questionEle = document.getElementById("question");
@@ -49,6 +56,8 @@ let d_text = document.getElementById("d_text");
 let submitBtn = document.getElementById("button")
 
 let currentQuiz = 0;
+let points = 0;
+
 
 loadQuiz();
 
@@ -57,23 +66,45 @@ function loadQuiz() {
     let currentQuizData = quizData[currentQuiz];
 
     questionEle.innerText = currentQuizData.
-    question;
+        question;
     a_text.innerText = currentQuizData.a;
     b_text.innerText = currentQuizData.b;
     c_text.innerText = currentQuizData.c;
     d_text.innerText = currentQuizData.d;
-   
+
 }
+
+// function to get correct answer to allow next question
+function getSelected() {
+
+    let answerElem = document.querySelectorAll(".answer");
+
+    let answer = undefined;
+
+    answerElem.forEach(answerElem => {
+        if (answerElem.checked) {
+            answer = answerElem.id;
+
+        }
+    });
+
+    return answer;
+
+}
+
 
 // asnwer button skips to next question
 submitBtn.addEventListener("click", () => {
+
+let answer = getSelected();
+
+  if(answer){
     currentQuiz++;
 
-    if(currentQuiz < quizData.length) {
+    if (currentQuiz < quizData.length) {
         loadQuiz();
-    }else{
-        alert('you have completed the quiz!')
+    }else {
+        alert("you have completed the quiz!")
     }
-
-    loadQuiz();
+  }
 });

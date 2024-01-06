@@ -1,3 +1,4 @@
+/* add background image and center div */
 body{
     background-image: url("../images/Checking-DNA-Against-Elephants-Hints-At-How-Mammoths-Got-Woolly-419498991-1445830826.jpg");
     background-repeat: no-repeat;
@@ -8,7 +9,7 @@ body{
     min-height: 100vh;
 }
 
-
+/* sizing of the quiz game and background color*/
 .quiz-box{
     background-color: #fff;
     width: 500px;
@@ -22,6 +23,8 @@ ul{
 ul li {
     margin: 1rem 0;
 }
+
+/*button sizing to fit div and add color*/
 #button{
     width: 100%;
     background-color: rgb(59, 59, 221);
@@ -31,6 +34,7 @@ ul li {
     padding: 1.5rem;
     font-size: 1.5rem;
 }
+/* hover function to see when hover over button*/
 #button:hover{
     background-color: blue;
 }
