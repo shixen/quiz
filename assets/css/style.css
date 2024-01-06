@@ -1,4 +1,7 @@
 body{
+    background-image: url("../images/Checking-DNA-Against-Elephants-Hints-At-How-Mammoths-Got-Woolly-419498991-1445830826.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,10 +10,33 @@ body{
 
 
 .quiz-box{
-    width:100%;
-    height: auto;
-    
-    
+    background-color: #fff;
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+ul{
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+ul li {
+    margin: 1rem 0;
+}
+.button{
+    width: 100%;
+    background-color: rgb(59, 59, 221);
+    color: #fff;
+    border: none;
+    display: block;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+button:hover{
+    background-color: blue;
+}
+h1{
+    padding: 4rem;
+    margin: 0;
 }
 
   
