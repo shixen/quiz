@@ -1,4 +1,6 @@
-let questions = [
+
+// questions for quiz
+let quizData = [
     {
         question: 'What was the largest animal to ever live ?',
         a: 'T-rex',
@@ -38,3 +40,40 @@ let questions = [
          correct: 'c'
 }
 ]
+// variables to get from DOM
+let questionEle = document.getElementById("question");
+let a_text = document.getElementById("a_text");
+let b_text = document.getElementById("b_text");
+let c_text = document.getElementById("c_text");
+let d_text = document.getElementById("d_text");
+let submitBtn = document.getElementById("button")
+
+let currentQuiz = 0;
+
+loadQuiz();
+
+// function to load Questions and asnwers to quiz
+function loadQuiz() {
+    let currentQuizData = quizData[currentQuiz];
+
+    questionEle.innerText = currentQuizData.
+    question;
+    a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+    c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d;
+   
+}
+
+// asnwer button skips to next question
+submitBtn.addEventListener("click", () => {
+    currentQuiz++;
+
+    if(currentQuiz < quizData.length) {
+        loadQuiz();
+    }else{
+        alert('you have completed the quiz!')
+    }
+
+    loadQuiz();
+});

@@ -22,7 +22,7 @@ ul{
 ul li {
     margin: 1rem 0;
 }
-.button{
+#button{
     width: 100%;
     background-color: rgb(59, 59, 221);
     color: #fff;
@@ -31,7 +31,7 @@ ul li {
     padding: 1.5rem;
     font-size: 1.5rem;
 }
-button:hover{
+#button:hover{
     background-color: blue;
 }
 h1{

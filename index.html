@@ -8,14 +8,21 @@
 </head>
 <body>
     <div class="quiz-box">
-        <h1>Question</h1>
+        <h1 id="question">Question</h1>
         <ul>
-            <li><input type="radio" id="a" name="Answer"><label for="a">Question</label></li>
-            <li><input type="radio" id="b" name="Answer"><label for="b">Question</label></li>
-            <li><input type="radio" id="c" name="Answer"><label for="c">Question</label></li>
-            <li><input type="radio" id="d" name="Answer"><label for="d">Question</label></li>
+            <li><input type="radio" id="a" name="Answer">
+                <label id="a_text" for="a">Question</label></li>
+
+            <li><input type="radio" id="b" name="Answer">
+                <label id="b_text" for="b">Question</label></li>
+
+            <li><input type="radio" id="c" name="Answer">
+                <label id="c_text" for="c">Question</label></li>
+
+            <li><input type="radio" id="d" name="Answer">
+                <label id="d_text" for="d">Question</label></li>
         </ul>
-        <button class="button">Answer</button>
+        <button id="button">Answer</button>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
