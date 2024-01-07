@@ -48,6 +48,8 @@ let quizData = [
     }
 ]
 // variables to get from DOM
+let answerElem = document.querySelectorAll(".answer");
+
 let questionEle = document.getElementById("question");
 let a_text = document.getElementById("a_text");
 let b_text = document.getElementById("b_text");
@@ -63,6 +65,7 @@ loadQuiz();
 
 // function to load Questions and asnwers to quiz
 function loadQuiz() {
+    deselectAnswers();
     let currentQuizData = quizData[currentQuiz];
 
     questionEle.innerText = currentQuizData.
@@ -76,9 +79,6 @@ function loadQuiz() {
 
 // function to get correct answer to allow next question
 function getSelected() {
-
-    let answerElem = document.querySelectorAll(".answer");
-
     let answer = undefined;
 
     answerElem.forEach(answerElem => {
@@ -92,6 +92,14 @@ function getSelected() {
 
 }
 
+function deselectAnswers(){
+    answerElem.forEach(answerElem => {
+        answerElem.checked = false;
+    });
+
+
+}
+
 
 // asnwer button skips to next question
 submitBtn.addEventListener("click", () => {
@@ -99,6 +107,11 @@ submitBtn.addEventListener("click", () => {
 let answer = getSelected();
 
   if(answer){
+    if(answer === quizData[currentQuiz].
+        correct) {
+            points++;
+        }
+   
     currentQuiz++;
 
     if (currentQuiz < quizData.length) {
