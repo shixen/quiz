@@ -49,7 +49,7 @@ let quizData = [
 ]
 // variables to get from DOM
 let answerElem = document.querySelectorAll(".answer");
-
+let quiz = document.getElementById("quiz")
 let questionEle = document.getElementById("question");
 let a_text = document.getElementById("a_text");
 let b_text = document.getElementById("b_text");
@@ -117,7 +117,8 @@ let answer = getSelected();
     if (currentQuiz < quizData.length) {
         loadQuiz();
     }else {
-        alert("you have completed the quiz!")
+        quiz.innerHTML = `<h2> you got ${points}/${quizData.length} questions right!
+         </h2> <button onclick="location.reload()">Play Again</button>`;
     }
   }
 });

@@ -1,4 +1,8 @@
 /* add background image and center div */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 body{
     background-image: url("../images/Checking-DNA-Against-Elephants-Hints-At-How-Mammoths-Got-Woolly-419498991-1445830826.jpg");
     background-repeat: no-repeat;
@@ -22,10 +26,12 @@ ul{
 }
 ul li {
     margin: 1rem 0;
+    font-family: oswald;
+    
 }
 
 /*button sizing to fit div and add color*/
-#button{
+button{
     width: 100%;
     background-color: rgb(59, 59, 221);
     color: #fff;
@@ -41,6 +47,16 @@ ul li {
 h1{
     padding: 4rem;
     margin: 0;
+}
+/* text for when quiz completed*/
+h2{
+    text-align: center;
+    padding: 2px;
+}
+
+/*countdown timer*/
+p{
+    background-color: #fff;
 }
 
   
