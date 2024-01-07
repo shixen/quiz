@@ -45,6 +45,13 @@ let quizData = [
         c: 'condor',
         d: 'Emu',
         correct: 'b',
+    },{
+        question: 'Which has the thickest fur of any mammal?',
+        a: 'Seel',
+        b: 'Penguin',
+        c: 'Sea otter',
+        d: 'Orca',
+        correct: 'c',
     }
 ]
 // variables to get from DOM

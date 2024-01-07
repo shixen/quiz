@@ -3,10 +3,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+
+
 body{
     background-image: url("../images/Checking-DNA-Against-Elephants-Hints-At-How-Mammoths-Got-Woolly-419498991-1445830826.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +30,7 @@ ul{
 ul li {
     margin: 1rem 0;
     font-family: oswald;
-    
+
 }
 
 /*button sizing to fit div and add color*/
@@ -45,11 +48,13 @@ button{
     background-color: blue;
 }
 h1{
+    font-family: oswald;
     padding: 4rem;
     margin: 0;
 }
 /* text for when quiz completed*/
 h2{
+    font-family: oswald;
     text-align: center;
     padding: 2px;
 }
