@@ -76,15 +76,3 @@ p{
     background-color: #fff;
 }
 
-#start{
-    margin-top: 10px;
-}
-
-#player{
-    height: 20px;
-    margin-bottom: 20px;
-}
-
-#start-btn:hover{
-    background-color: rgb(40, 40, 100);
-}

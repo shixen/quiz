@@ -87,6 +87,7 @@ function loadQuiz() {
 
 // function to get correct answer to allow next question
 function getSelected() {
+    try{
     let answer 
 
     answerElem.forEach(answerElem => {
@@ -97,14 +98,21 @@ function getSelected() {
     });
 
     return answer;
-
+}
+catch(err){
+    alert(err.message)
+}
 }
 
 function deselectAnswers(){
+    try{
     answerElem.forEach(answerElem => {
         answerElem.checked = false;
     });
-
+}
+catch(err){
+    alert(err.message);
+}
 
 }
 
