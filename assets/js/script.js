@@ -68,6 +68,7 @@ let currentQuiz = 0;
 let points = 0;
 
 
+
 loadQuiz();
 
 // function to load Questions and asnwers to quiz
@@ -86,7 +87,7 @@ function loadQuiz() {
 
 // function to get correct answer to allow next question
 function getSelected() {
-    let answer = undefined;
+    let answer 
 
     answerElem.forEach(answerElem => {
         if (answerElem.checked) {
@@ -129,3 +130,4 @@ let answer = getSelected();
     }
   }
 });
+
