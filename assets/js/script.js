@@ -1,6 +1,6 @@
 
 // questions for quiz
-let quizData = [
+const quizData = [
     {
         question: 'What was the largest animal to ever live ?',
         a: 'T-rex',
@@ -118,10 +118,9 @@ catch(err){
 
 
 // asnwer button skips to next question
+
 submitBtn.addEventListener("click", () => {
-
-let answer = getSelected();
-
+   let answer = getSelected();
   if(answer){
     if(answer === quizData[currentQuiz].
         correct) {
@@ -138,4 +137,5 @@ let answer = getSelected();
     }
   }
 });
+
 
