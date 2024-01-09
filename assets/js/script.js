@@ -62,7 +62,8 @@ let a_text = document.getElementById("a_text");
 let b_text = document.getElementById("b_text");
 let c_text = document.getElementById("c_text");
 let d_text = document.getElementById("d_text");
-let submitBtn = document.getElementById("button")
+let submitBtn = document.getElementById("button");
+let timeLeft = document.getElementsByClassName("time-left");
 
 let currentQuiz = 0;
 let points = 0;
@@ -84,6 +85,21 @@ function loadQuiz() {
     d_text.innerText = currentQuizData.d;
 
 }
+// timer for quiz
+
+let timeleft = 60;
+let downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    (downloadTimer);
+    document.getElementById("time-left").innerHTML = "time out"; 
+
+  } else {
+    document.getElementById("time-left").innerHTML = timeleft;
+  }
+  timeleft -= 1;
+}, 1000);
+
+
 
 // function to get correct answer to allow next question
 function getSelected() {
