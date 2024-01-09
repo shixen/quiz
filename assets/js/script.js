@@ -45,7 +45,7 @@ const quizData = [
         c: 'condor',
         d: 'Emu',
         correct: 'b',
-    },{
+    }, {
         question: 'Which has the thickest fur of any mammal?',
         a: 'Seel',
         b: 'Penguin',
@@ -88,47 +88,48 @@ function loadQuiz() {
 // timer for quiz
 
 let timeleft = 60;
-let downloadTimer = setInterval(function(){
-  if(timeleft <= 0){
-    (downloadTimer);
-    document.getElementById("time-left").innerHTML = "time out"; 
+let downloadTimer = setInterval(function () {
+    if (timeleft <= 0) {
+        (downloadTimer);
+        quiz.innerHTML = `<h2> aww your out of time!
+         </h2> <button onclick="location.reload()">Play Again</button>`;
 
-  } else {
-    document.getElementById("time-left").innerHTML = timeleft;
-  }
-  timeleft -= 1;
+    } else {
+        document.getElementById("time-left").innerHTML = timeleft;
+    }
+    timeleft -= 1;
 }, 1000);
 
 
 
 // function to get correct answer to allow next question
 function getSelected() {
-    try{
-    let answer 
+    try {
+        let answer
 
-    answerElem.forEach(answerElem => {
-        if (answerElem.checked) {
-            answer = answerElem.id;
+        answerElem.forEach(answerElem => {
+            if (answerElem.checked) {
+                answer = answerElem.id;
 
-        }
-    });
+            }
+        });
 
-    return answer;
-}
-catch(err){
-    alert(err.message)
-}
+        return answer;
+    }
+    catch (err) {
+        alert(err.message)
+    }
 }
 
-function deselectAnswers(){
-    try{
-    answerElem.forEach(answerElem => {
-        answerElem.checked = false;
-    });
-}
-catch(err){
-    alert(err.message);
-}
+function deselectAnswers() {
+    try {
+        answerElem.forEach(answerElem => {
+            answerElem.checked = false;
+        });
+    }
+    catch (err) {
+        alert(err.message);
+    }
 
 }
 
@@ -136,22 +137,22 @@ catch(err){
 // asnwer button skips to next question
 
 submitBtn.addEventListener("click", () => {
-   let answer = getSelected();
-  if(answer){
-    if(answer === quizData[currentQuiz].
-        correct) {
+    let answer = getSelected();
+    if (answer) {
+        if (answer === quizData[currentQuiz].
+            correct) {
             points++;
         }
-   
-    currentQuiz++;
 
-    if (currentQuiz < quizData.length) {
-        loadQuiz();
-    }else {
-        quiz.innerHTML = `<h2> you got ${points}/${quizData.length} questions right!
+        currentQuiz++;
+
+        if (currentQuiz < quizData.length) {
+            loadQuiz();
+        } else {
+            quiz.innerHTML = `<h2> you got ${points}/${quizData.length} questions right!
          </h2> <button onclick="location.reload()">Play Again</button>`;
+        }
     }
-  }
 });
 
 
