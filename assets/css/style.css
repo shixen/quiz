@@ -75,4 +75,11 @@ p{
     border-radius: 10px;
     background-color: #fff;
 }
+span{
+    font-size: large;
+    display: flex;
+    justify-content: end;
+    margin: 20px;
+
+}
 
