@@ -60,9 +60,6 @@ h2{
 }
 
 /*countdown timer*/
-p{
-    background-color: #fff;
-}
 
 /* username and start quiz */
 
@@ -76,9 +73,12 @@ p{
     background-color: #fff;
 }
 
-#time-left{
+#timer-left{
+    padding: 5px;
+    margin: 30px;
+}
+#timer{
     font-size: large;
-    display: flex;
-    justify-content: end;
-    margin: 20px;
+    font-family: oswald;
+    margin-left: 20px;
 }
