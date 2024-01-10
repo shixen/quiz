@@ -53,10 +53,10 @@ const quizData = [
         d: 'Orca',
         correct: 'c',
     }
-]
+];
 // variables to get from DOM
 let answerElem = document.querySelectorAll(".answer");
-let quiz = document.getElementById("quiz")
+let quiz = document.getElementById("quiz");
 let questionEle = document.getElementById("question");
 let a_text = document.getElementById("a_text");
 let b_text = document.getElementById("b_text");
@@ -100,7 +100,7 @@ let timeleft = 60;
 // function to get correct answer to allow next question
 function getSelected() {
     try {
-        let answer
+        let answer;
 
         answerElem.forEach(answerElem => {
             if (answerElem.checked) {
@@ -112,7 +112,7 @@ function getSelected() {
         return answer;
     }
     catch (err) {
-        alert(err.message)
+        alert(err.message);
     }
 }
 
