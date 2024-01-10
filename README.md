@@ -107,7 +107,10 @@ To deploy the site using GitHub
 | click answer  | brings you to next question     |  brings you to next question |
 | click play again button  | brings you to the beginning   | brings you to the beginning |
 
-testing was done through the whole build of the project using google devtools to pinpoint any issius along the way.
+* testing was done through the whole build of the project using google devtools to pinpoint any issius along the way.
+* manual testing was done to see the responsiveness of the page with google devtools
+* Accessability testing was done with lighthouse
+
 
 
 ### Automated testing
@@ -138,6 +141,20 @@ testing was done through the whole build of the project using google devtools to
 
 # Credits
 
+* [youtube video](https://www.youtube.com/watch?v=p-2G-7vLuV4) was used for inspiration to the project
+
+* [w3 schools](https://www.w3schools.com/jsref/jsref_try_catch.asp) was used to remember part of code
+
+# Content
+
+The content for this project was wrtitten by Niklas Eriksson 
+
+# Acknowledgements
+
+I want to acknowledge the following people who helped me along the way for this project
+
+* my code institute mentor Rory Patrick
+* The code institute team and class to support along the way
 
 
   
