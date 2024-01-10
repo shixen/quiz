@@ -58,6 +58,11 @@ question further in the quiz
 
 ![A4C2DD27-9D72-4395-BEAF-DF8FF79B2745_1_201_a](https://github.com/shixen/quiz/assets/150827343/b64bcb75-5e39-423b-8578-b6e04b9400de)
 
+if timer runs out you get an option to play again
+
+![Skärmbild 2024-01-10 134507](https://github.com/shixen/quiz/assets/150827343/c310a3b4-7a0b-40aa-8acc-5831e00ff628)
+
+
 End of quiz with score to show how well you did and  a message aswell as option to play again
 
 ![8F64F00B-E3AD-4E3E-B298-F562B92F5E51_1_201_a](https://github.com/shixen/quiz/assets/150827343/8f5953b3-f821-4d4c-bd75-fcf7821ecc3e)
@@ -102,12 +107,19 @@ To deploy the site using GitHub
 | click answer  | brings you to next question     |  brings you to next question |
 | click play again button  | brings you to the beginning   | brings you to the beginning |
 
+testing was done through the whole build of the project using google devtools to pinpoint any issius along the way.
+
 
 ### Automated testing
 
 * lighthouse in google devtools was used
 
  ![Skärmbild 2024-01-10 132709](https://github.com/shixen/quiz/assets/150827343/dccc5652-d605-4963-b962-4b7e96bd8f7b)
+
+ * HTML validator showed one warning because javascript using this heading for questions to quiz.
+
+![Skärmbild 2024-01-10 131652](https://github.com/shixen/quiz/assets/150827343/0c6fcab5-3287-4b88-9b57-7cd7d72c665f)
+
 
  * Css validator was used check css code
    
@@ -116,6 +128,16 @@ To deploy the site using GitHub
   Jshint was used to check jacascript code
 
   ![Skärmbild 2024-01-10 132158](https://github.com/shixen/quiz/assets/150827343/203c3bbe-142b-4611-8113-4264fc4986fe)
+
+  # Bugs
+
+ no known bugs 
+
+ warning due to empty html element where jacascript is used to put quesition to quiz
+![Skärmbild 2024-01-10 131652](https://github.com/shixen/quiz/assets/150827343/d4358522-1081-4c02-9a54-ebfe43b613d2)
+
+# Credits
+
 
 
   
