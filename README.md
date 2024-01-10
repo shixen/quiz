@@ -102,7 +102,21 @@ To deploy the site using GitHub
 | click answer  | brings you to next question     |  brings you to next question |
 | click play again button  | brings you to the beginning   | brings you to the beginning |
 
-  
+
+### Automated testing
+
+* lighthouse in google devtools was used
+
+ ![Skärmbild 2024-01-10 132709](https://github.com/shixen/quiz/assets/150827343/dccc5652-d605-4963-b962-4b7e96bd8f7b)
+
+ * Css validator was used check css code
+   
+  ![Skärmbild 2024-01-10 131813](https://github.com/shixen/quiz/assets/150827343/052e9f20-7ccf-44ba-b3c8-08700682d8e8)
+
+  Jshint was used to check jacascript code
+
+  ![Skärmbild 2024-01-10 132158](https://github.com/shixen/quiz/assets/150827343/203c3bbe-142b-4611-8113-4264fc4986fe)
+
 
   
 
