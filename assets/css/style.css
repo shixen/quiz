@@ -3,8 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-
-
+/* img to background and center quiz in middle*/
 body{
     background-image: url("../images/checking-dna-against-elephants-hints-at-how-mammoths-got-woolly-419498991-1445830826.jpg");
     background-repeat: no-repeat;
@@ -59,20 +58,8 @@ h2{
     padding: 2px;
 }
 
-/*countdown timer*/
 
-/* username and start quiz */
-
-#begin{
-    text-align: center;
-    font-size: 30px;
-    font-family: oswald ;
-    width: 500px;
-    max-width: 100%;
-    border-radius: 10px;
-    background-color: #fff;
-}
-
+/* styles for countdown timer*/
 #timer-left{
     padding: 5px;
     margin: 30px;
