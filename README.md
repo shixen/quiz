@@ -88,9 +88,9 @@ HTML, CSS, JAVASCRIPT
 * Google devtools to test code and look for froblems
 * GitPod to code
 * [Am i responsive](https://amiresponsive.co.uk/) to show the site is responsive
-* [Jshint](https://jshint.com/) to controll JavaScript code
-* [HTML Validator](https://validator.w3.org/) to controll HTML code
-* [CSS validator](https://validator.w3.org/) to controll CSS code
+* [Jshint](https://jshint.com/) to validate JavaScript code
+* [HTML Validator](https://validator.w3.org/) to validate HTML code
+* [CSS validator](https://validator.w3.org/) to validate CSS code
 
   # Deployment
 
