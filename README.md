@@ -9,6 +9,12 @@ this is a quiz about animals with 7 questions to both test your knowledge and to
 
 the quiz is about animals of all kinds from tigers to sea otters and is designed to have a fun experience while testing your knowledge aswell as learning something along the way.
 
+# How it works
+
+this is a quiz containing 7 different questions about animals, the quiz start when you load the page and a timer starts for 1 minute wich means that you have one minute to answer the questions.
+if u fail to complete it in time the quiz will stop and an option to start over will be avalible. If you complete the quiz your score will be shown and a button to play again if you desire.
+
+
 ## User experience
 
 * A user should be able to determin the purpose of the page
