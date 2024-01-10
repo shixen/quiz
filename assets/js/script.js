@@ -63,7 +63,6 @@ let b_text = document.getElementById("b_text");
 let c_text = document.getElementById("c_text");
 let d_text = document.getElementById("d_text");
 let submitBtn = document.getElementById("button");
-let timeLeft = document.getElementsByClassName("time-left");
 
 let currentQuiz = 0;
 let points = 0;
@@ -86,9 +85,8 @@ function loadQuiz() {
 // timer for quiz
 
 let timeleft = 60;
-let downloadTimer = setInterval(function () {
+ setInterval(function () {
     if (timeleft <= 0) {
-        (downloadTimer);
         quiz.innerHTML = `<h2> aww your out of time!
          </h2> <button onclick="location.reload()">Play Again</button>`;
 
@@ -127,7 +125,6 @@ function deselectAnswers() {
     catch (err) {
         alert(err.message);
     }
-
 }
 
 // asnwer button skips to next question
@@ -146,7 +143,7 @@ submitBtn.addEventListener("click", () => {
             loadQuiz();
         } else {
             quiz.innerHTML = `<h2> you got ${points}/${quizData.length} questions right!
-         </h2> <button onclick="location.reload()">Play Again</button>`;
+         </h2> <button onclick="location.reload()">Play Again</button> <span id="time-left"> class="d-none"<span>`;
         }
     }
 });
