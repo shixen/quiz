@@ -1,5 +1,6 @@
 # Quiz
-this is a quiz about animals with 7 questions to both test your knowledge and to mabye learn something about animals
+this is a quiz about animals with 7 questions to both test your knowledge and to mabye learn something about animals.
+i got the idea of the layout while not having a computer close by so i decided to draw it out on a piece of paper and later ended up baseing the structure of the quiz from that drawing
 
 ![19B6A5CE-620B-47A0-A21E-33B14EEBE832_1_201_a](https://github.com/shixen/quiz/assets/150827343/793bb52f-065b-4157-a844-4bbfc1b1a60c)
 
@@ -42,6 +43,13 @@ if u fail to complete it in time the quiz will stop and an option to start over 
 
 i chose simple colors to keep the site clean and relevant to the background
 
+# Wireframes
+The wireframe was drawn on a piece of paper but ended up with that structure in the end.
+![ED417893-5526-4496-B9FA-C0637EFC66E8_1_201_a](https://github.com/shixen/quiz/assets/150827343/d5cd139e-b777-41f8-b58d-b3dd89741100)
+![E74FF3F1-E4F8-46D8-87A0-145A260000B1_1_201_a](https://github.com/shixen/quiz/assets/150827343/bd17f869-22c3-416d-aa06-04ad25650332)
+
+
+
 ![94BFA638-262C-4C15-B5B0-C039E9EABD5E_1_201_a](https://github.com/shixen/quiz/assets/150827343/6d36f032-4548-466a-bb52-c0e6ccdc53d6)
 
 # Typography
@@ -50,15 +58,15 @@ Google fonts is used on the site and i chose oswald font because its clean and e
 
 # Featured
 
-Quiz start
+Quiz starts with a 60 secound timer to complete 7 different questions
 
 ![B447B63A-6F3E-4FF4-BD8D-E2CA7B666823_1_201_a](https://github.com/shixen/quiz/assets/150827343/31c153c6-f792-4604-8e43-6389e077351d)
 
-question further in the quiz
+example question in the quiz with 4 alternetive answers
 
 ![A4C2DD27-9D72-4395-BEAF-DF8FF79B2745_1_201_a](https://github.com/shixen/quiz/assets/150827343/b64bcb75-5e39-423b-8578-b6e04b9400de)
 
-if timer runs out you get an option to play again
+if timer runs out this pops up and option to play again appears
 
 ![Skärmbild 2024-01-10 134507](https://github.com/shixen/quiz/assets/150827343/c310a3b4-7a0b-40aa-8acc-5831e00ff628)
 
@@ -119,25 +127,26 @@ To deploy the site using GitHub
 
  ![Skärmbild 2024-01-10 132709](https://github.com/shixen/quiz/assets/150827343/dccc5652-d605-4963-b962-4b7e96bd8f7b)
 
- * HTML validator showed one warning because javascript using this heading for questions to quiz.
+ * HTML validator showed no bugs or warnings
 
-![Skärmbild 2024-01-10 131652](https://github.com/shixen/quiz/assets/150827343/0c6fcab5-3287-4b88-9b57-7cd7d72c665f)
+![0B6A8C96-0211-4056-8D04-380E1503666F_1_201_a](https://github.com/shixen/quiz/assets/150827343/e8ee0d80-11e8-4007-ac54-c58d8443e76a)
 
 
- * Css validator was used check css code
+
+
+ * Css validator was used check css code and no bugs or warnings
    
   ![Skärmbild 2024-01-10 131813](https://github.com/shixen/quiz/assets/150827343/052e9f20-7ccf-44ba-b3c8-08700682d8e8)
 
-  Jshint was used to check jacascript code
+  Jshint was used to check jacascript code and no bugs or warnings
+  
+![788FC18F-BB68-4942-9E20-B8FAF3F3661B_1_201_a](https://github.com/shixen/quiz/assets/150827343/8c294ef2-8274-482f-a1bc-1f8c067dfc64)
 
-  ![Skärmbild 2024-01-10 132158](https://github.com/shixen/quiz/assets/150827343/203c3bbe-142b-4611-8113-4264fc4986fe)
+  
 
   # Bugs
 
- no known bugs 
-
- warning due to empty html element where jacascript is used to put quesition to quiz
-![Skärmbild 2024-01-10 131652](https://github.com/shixen/quiz/assets/150827343/d4358522-1081-4c02-9a54-ebfe43b613d2)
+ no known bugs or warnings
 
 # Credits
 
