@@ -68,8 +68,6 @@ let timeLeft = document.getElementsByClassName("time-left");
 let currentQuiz = 0;
 let points = 0;
 
-
-
 loadQuiz();
 
 // function to load Questions and asnwers to quiz
@@ -99,7 +97,6 @@ let downloadTimer = setInterval(function () {
     }
     timeleft -= 1;
 }, 1000);
-
 
 
 // function to get correct answer to allow next question
@@ -132,7 +129,6 @@ function deselectAnswers() {
     }
 
 }
-
 
 // asnwer button skips to next question
 
