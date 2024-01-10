@@ -142,7 +142,7 @@ submitBtn.addEventListener("click", () => {
         if (currentQuiz < quizData.length) {
             loadQuiz();
         } else {
-            clearInterval(timeleft)
+            clearInterval(timeleft);
             quiz.innerHTML = `<h2> you got ${points}/${quizData.length} questions right!
          </h2> <button onclick="location.reload()">Play Again</button>`;
         }
