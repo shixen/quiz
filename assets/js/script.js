@@ -96,7 +96,6 @@ let timeleft = 60;
     timeleft -= 1;
 }, 1000);
 
-
 // function to get correct answer to allow next question
 function getSelected() {
     try {
