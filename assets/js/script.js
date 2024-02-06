@@ -91,10 +91,11 @@ let timeleft = 60;
          </h2> <button onclick="location.reload()">Play Again</button>`;  
          clearInterval(myInyrtval);
     }
+    // makes timer stop if all questions are answered
     if(currentQuiz === 7){
         clearInterval(myInyrtval);
         
-        
+    // keeps timer shown untill its 1 second left
     } if(timeleft >1){
         document.getElementById("time-left").innerHTML = timeleft;
     }
@@ -121,7 +122,10 @@ function getSelected() {
         alert(err.message);
     }
 }
-
+/*
+ removes the checked answer from last question
+ so next question does not have an checked button
+ */
 function deselectAnswers() {
     try {
         answerElem.forEach(answerElem => {
