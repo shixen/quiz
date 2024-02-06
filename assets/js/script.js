@@ -86,15 +86,17 @@ function loadQuiz() {
 
 let timeleft = 60;
  setInterval(function () {
-    if (timeleft <= 0) {
+    if (timeleft <= 1) {
         quiz.innerHTML = `<h2> aww your out of time!
          </h2> <button onclick="location.reload()">Play Again</button>`;  
+         clearInterval(timeleft);
     }
     if(currentQuiz === 7){
         clearInterval(timeleft);
+        
+        
     } else {
         document.getElementById("time-left").innerHTML = timeleft;
-        clearInterval(timeleft);  
     }
     timeleft -= 1;
 }, 1000);
