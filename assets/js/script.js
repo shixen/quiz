@@ -85,17 +85,17 @@ function loadQuiz() {
 // timer for quiz
 
 let timeleft = 60;
- setInterval(function () {
+ const myInyrtval = setInterval(function () {
     if (timeleft <= 1) {
         quiz.innerHTML = `<h2> aww your out of time!
          </h2> <button onclick="location.reload()">Play Again</button>`;  
-         clearInterval(timeleft);
+         clearInterval(myInyrtval);
     }
     if(currentQuiz === 7){
-        clearInterval(timeleft);
+        clearInterval(myInyrtval);
         
         
-    } else {
+    } if(timeleft >1){
         document.getElementById("time-left").innerHTML = timeleft;
     }
     timeleft -= 1;
@@ -148,8 +148,9 @@ submitBtn.addEventListener("click", () => {
         if (currentQuiz < quizData.length) {
             loadQuiz();
         } 
-
+         // opens up section to show score and play again option
         else {
+            clearInterval(myInyrtval);
             quiz.innerHTML = `<h2> you got ${points}/${quizData.length} questions right!
          </h2> <button onclick="location.reload()">Play Again</button>`;
          
