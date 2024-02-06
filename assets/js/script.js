@@ -88,13 +88,18 @@ let timeleft = 60;
  setInterval(function () {
     if (timeleft <= 0) {
         quiz.innerHTML = `<h2> aww your out of time!
-         </h2> <button onclick="location.reload()">Play Again</button>`;
-
+         </h2> <button onclick="location.reload()">Play Again</button>`;  
+    }
+    if(currentQuiz === 7){
+        clearInterval(timeleft);
     } else {
         document.getElementById("time-left").innerHTML = timeleft;
+        clearInterval(timeleft);  
     }
     timeleft -= 1;
 }, 1000);
+
+
 
 // function to get correct answer to allow next question
 function getSelected() {
@@ -140,10 +145,12 @@ submitBtn.addEventListener("click", () => {
 
         if (currentQuiz < quizData.length) {
             loadQuiz();
-        } else {
-            clearInterval(timeleft);
+        } 
+
+        else {
             quiz.innerHTML = `<h2> you got ${points}/${quizData.length} questions right!
          </h2> <button onclick="location.reload()">Play Again</button>`;
+         
         }
     }
 });
